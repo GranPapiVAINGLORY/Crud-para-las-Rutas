@@ -1,31 +1,25 @@
-# AJAX CRUD for Laravel 5.4
+# AJAX CRUD para Laravel 5.7
 
-Asynchronous actions on a Laravel resource controller. For step by step instructions, visit my [blog post](http://www.jmkleger.com/post/ajax-crud-for-laravel-5-4).
+## Instalacion
 
-## Installation
-
-Clone the repo
+Clona el repositorio
 ```
-git clone https://github.com/jeanquark/ajax-crud.git
+git clone https://github.com/GranPapiVAINGLORY/Crud-para-las-Rutas.git
 ```
 
-Move to the newly created folder and install all dependencies:
+Dirigete a la carpeta que has clonado e instala las dependecias:
 ```
 cd ajax-crud
 composer install
 ```
 
-Create a new database, for example with phpMyAdmin. Then open the .env.example file, edit it to match your database name, username and password and save it as .env file. Once done, build tables with the following command:
+Crea o adapta ya a tus base de datos:
 ```
-php artisan migrate
-```
-
-Now fill the tables:
-```
-php artisan db:seed
+php artisan make:migration (el nombre que le daras a tu base)
+php artisan migrate (si es que ya la tienes y en el archivo .env configura tus credenciales)
 ```
 
-Finally, generate the application key 
+Te recomiendo generar una llave
 ```
 php artisan key:generate
 ```
@@ -33,23 +27,8 @@ php artisan key:generate
 Open your favorite browser and visit the newly created app.
 
 ## Features
-1. Create a new post
-2. Show a post
-3. Edit a post
-4. Delete a post
-5. Mark a post as published/unpublished
-
-## Screenshots
-
-Homepage:
-![homepage](https://github.com/jeanquark/ajax-crud/raw/master/public/homepage.png "Homepage")
-
-Table:
-![table](https://github.com/jeanquark/ajax-crud/raw/master/public/table.png "table")
-
-Create a new post:
-![create](https://github.com/jeanquark/ajax-crud/raw/master/public/add.png "add")
-
-## Licence
-
-Please refer to the [Laravel licence](https://opensource.org/licenses/MIT)
+1. Crear nuevo post
+2. Mostrar detalles de un post
+3. Editar un post
+4. Eliminar un post
+5. Marcar un post como publicado/no publicado
