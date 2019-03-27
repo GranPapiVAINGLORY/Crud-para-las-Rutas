@@ -24,9 +24,9 @@ Te recomiendo generar una llave
 php artisan key:generate
 ```
 
-Open your favorite browser and visit the newly created app.
+Abrelo con el navegador que estas trabajando el proyecto, yo use la edicion developer de Firefox es mas completa
 
-## Features
+## Funciones
 1. Crear nuevo post
 2. Mostrar detalles de un post
 3. Editar un post
